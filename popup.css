@@ -1,0 +1,43 @@
+html {
+  margin: auto;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+* {
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  margin: 5%;
+  padding: 0;
+  width: 400px;
+}
+
+button {
+  width: 100%;
+  padding: 8px 16px;
+  border-radius: 4px;
+  color: white;
+  background-color: blue;
+  margin-top: 16px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #008cba;
+}
+
+textarea {
+  min-height: 200px;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  outline: none;
+  border: 2px solid gainsboro;
+  border-radius: 4px;
+  padding: 8px;
+}
