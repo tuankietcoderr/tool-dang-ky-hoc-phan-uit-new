@@ -11,7 +11,7 @@ submitBtn.addEventListener("click", () => {
   const proceed = confirm("Bạn có chắc chắn muốn đăng ký những môn học này?");
   if (!proceed) return;
   const subjects = textarea.value;
-  chrome.tabs.query(
+  chrome.tabs?.query(
     {
       active: true,
       currentWindow: true,
@@ -25,3 +25,6 @@ submitBtn.addEventListener("click", () => {
     }
   );
 });
+
+const version = $("#version");
+version.textContent = chrome.runtime?.getManifest().version || "0.1.0";

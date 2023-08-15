@@ -15,7 +15,7 @@ body {
   width: 400px;
 }
 
-button {
+button:not(#donate) {
   width: 100%;
   padding: 8px 16px;
   border-radius: 4px;
@@ -27,7 +27,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+button:not(#donate):hover {
   background-color: #008cba;
 }
 
@@ -40,4 +40,62 @@ textarea {
   border: 2px solid gainsboro;
   border-radius: 4px;
   padding: 8px;
+}
+
+#author {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+
+#author > section {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+#donate_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+
+#donate {
+  outline: none;
+  border: none;
+  background-color: white;
+  padding: 4px 12px;
+  border-radius: 4px;
+  border: 1px solid #fbdd29;
+  display: block;
+  cursor: pointer;
+}
+
+#donate > a {
+  color: #fbdd29;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+#donate > a > img {
+  width: 20px;
+  margin-right: 4px;
+}
+
+#donate:hover {
+  background-color: #fbdd29;
+}
+
+#donate:hover > a {
+  color: black;
+}
+
+#version_wrapper {
+  text-align: right;
+  font-style: italic;
+  font-size: 12px;
 }
