@@ -18,7 +18,7 @@
         ></textarea>
         <button id="submit_btn"><b>Đăng ký</b></button>
       </div>
-      <hr style="margin-top: 16px;"/>
+      <hr style="margin-top: 16px" />
       <div id="author">
         <small>Tạo bởi <b>tuankietcoder</b></small>
         <section>
@@ -55,7 +55,23 @@
           >
         </button>
       </div>
-      <p id="version_wrapper"><small>Phiên bản</small> <b><small id="version"></small></b></p>
+      <p id="version_wrapper">
+        <small>Phiên bản</small> <b><small id="version"></small></b>
+      </p>
     </div>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-6DTS7XXEGK"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-6DTS7XXEGK");
+    </script>
   </body>
 </html>
