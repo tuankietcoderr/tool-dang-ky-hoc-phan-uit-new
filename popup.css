@@ -99,3 +99,23 @@ textarea {
   font-style: italic;
   font-size: 12px;
 }
+
+#test {
+  display: block;
+  margin-top: 16px;
+  width: 100%;
+  padding: 6px 16px;
+  text-align: center;
+  background-color: white;
+  color: blue;
+  border: 1px solid blue;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#test:hover {
+  background-color: blue;
+  color: white;
+}
