@@ -1,9 +1,9 @@
 {
   "name": "Tool Đăng ký học phần UIT",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Tool đăng ký học phần UIT mới",
   "author": "tuankietcoder",
-  "permissions": ["tabs"],
+  "permissions": [],
   "host_permissions": [
     "https://dkhp.uit.edu.vn/*",
     "http://127.0.0.1:5173/*",
@@ -34,17 +34,21 @@
   ],
   "action": {
     "default_icon": {
-      "16": "assets/ext-icon.png",
-      "24": "assets/ext-icon.png",
-      "32": "assets/ext-icon.png"
+      "16": "/assets/ext-icon.png",
+      "24": "/assets/ext-icon.png",
+      "32": "/assets/ext-icon.png",
+      "48": "/assets/ext-icon.png",
+      "128": "/assets/ext-icon.png"
     },
     "default_title": "Tool Đăng ký học phần UIT",
     "default_popup": "index.html"
   },
   "icons": {
-    "16": "assets/ext-icon.png",
-    "24": "assets/ext-icon.png",
-    "32": "assets/ext-icon.png"
+    "16": "/assets/ext-icon.png",
+    "24": "/assets/ext-icon.png",
+    "32": "/assets/ext-icon.png",
+    "48": "/assets/ext-icon.png",
+    "128": "/assets/ext-icon.png"
   },
   "manifest_version": 3
 }
