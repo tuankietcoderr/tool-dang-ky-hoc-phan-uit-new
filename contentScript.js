@@ -37,7 +37,9 @@ function DangKy(monDangKyString) {
 }
 
 function Duyet() {
-  const button = document.querySelector('button[class*="chakra-button css"]');
+  const button =
+    document.querySelector('button[class*="chakra-button css-kyhdse"]') ||
+    document.querySelector('button[class*="chakra-button css-14qea61"]');
   if (!button) return;
   button.click();
 }
