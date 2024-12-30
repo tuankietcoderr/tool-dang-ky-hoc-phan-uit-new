@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json.schemastore.org/chrome-manifest",
+
+  "name": "Tool Đăng ký học phần UIT",
+  "version": "0.2.0",
+  "description": "Tool đăng ký học phần UIT mới",
+  "author": "tuankietcoder",
+  "permissions": [],
+  "host_permissions": [
+    "https://dkhp.uit.edu.vn/*",
+    "http://127.0.0.1:5173/*",
+    "http://localhost:5173/*",
+    "https://tool-dang-ky-hoc-phan-uit-new-web-test.vercel.app/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://dkhp.uit.edu.vn/*",
+        "http://127.0.0.1:5173/*",
+        "http://localhost:5173/*",
+        "https://tool-dang-ky-hoc-phan-uit-new-web-test.vercel.app/*"
+      ],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["assets/*"],
+      "matches": [
+        "https://dkhp.uit.edu.vn/*",
+        "http://127.0.0.1:5173/*",
+        "http://localhost:5173/*",
+        "https://tool-dang-ky-hoc-phan-uit-new-web-test.vercel.app/*"
+      ]
+    }
+  ],
+  "action": {
+    "default_icon": {
+      "16": "/assets/ext-icon.png",
+      "24": "/assets/ext-icon.png",
+      "32": "/assets/ext-icon.png",
+      "48": "/assets/ext-icon.png",
+      "128": "/assets/ext-icon.png"
+    },
+    "default_title": "Tool Đăng ký học phần UIT",
+    "default_popup": "index.html"
+  },
+  "icons": {
+    "16": "/assets/ext-icon.png",
+    "24": "/assets/ext-icon.png",
+    "32": "/assets/ext-icon.png",
+    "48": "/assets/ext-icon.png",
+    "128": "/assets/ext-icon.png"
+  },
+  "manifest_version": 3
+}

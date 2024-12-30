@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tool Đăng ký học phần UIT</title>
+    <script type="module" src="popup.js"></script>
+    <link rel="stylesheet" href="popup.css" />
+    <link rel="shortcut icon" href="assets/ext-icon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <h2>Tool Đăng ký học phần UIT</h2>
+    <div>
+      <p style="margin-bottom: 8px">Môn học đăng ký</p>
+      <div>
+        <textarea
+          placeholder='Dán vào đây (mỗi môn học là 1 dòng)&#10Ví dụ:&#10SE358.O11.PMCL&#10SE100.O12.PMCL&#10SE214.O11.PMCL&#10CS114.O11.KHCL&#10CS116.O11.KHCL&#10'
+        ></textarea>
+        <button class="button-82-pushable" role="button" id="submit_btn">
+          <span class="button-82-shadow"></span>
+          <span class="button-82-edge"></span>
+          <span class="button-82-front text">
+            Đăng ký
+          </span>
+        </button>
+        <a href="https://tool-dang-ky-hoc-phan-uit-new-web-test.vercel.app" target="_blank" class="button-82-pushable" role="button" id="test">
+          <span class="button-82-shadow"></span>
+          <span class="button-82-edge test"></span>
+          <span class="button-82-front test">
+            Test trên web
+          </span>
+        </a>
+      </div>
+      <hr style="margin-top: 16px" />
+      <div id="author">
+        <small>Tạo bởi <b>tuankietcoder</b></small>
+        <section>
+          <small>
+            <a href="https://github.com/tuankietcoderr" target="_blank">
+              Github
+            </a>
+          </small>
+          <small>
+            <a href="https://www.facebook.com/tuankietcoder" target="_blank">
+              Facebook
+            </a>
+          </small>
+          <small>
+            <a
+              href="https://www.linkedin.com/in/tuankietcoder/"
+              target="_blank"
+            >
+              Linkedin
+            </a>
+          </small>
+        </section>
+      </div>
+      <div id="donate_wrapper">
+        <p><small>Support mình bằng cách </small></p>
+        <button id="donate">
+          <a href="https://www.buymeacoffee.com/tuankietcoder" target="_blank">
+            <img
+              src="/assets/buy-me-a-coffee-logo.png"
+              alt="Buy me a coffee tuanakietcoder"
+              loading="eager"
+              style="object-fit: contain; width: 20px; height: auto;"
+            />
+            Donate</a
+          >
+        </button>
+      </div>
+      <div id="metadata">
+        <a href="https://github.com/tuankietcoderr/tool-dang-ky-hoc-phan-uit-new" target="_blank" id="source_code">
+          Source code
+        </a>
+        <p id="version_wrapper">
+          <small>Phiên bản</small> <b><small id="version"></small></b>
+        </p>
+      </div>
+    </div>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-6DTS7XXEGK"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-6DTS7XXEGK");
+    </script>
+  </body>
+</html>
